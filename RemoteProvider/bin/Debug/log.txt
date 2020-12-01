@@ -1,0 +1,2 @@
+2018-08-30 12:08:51.1502|ERROR|tcp_server.Server|Unhendles exception.
+2018-08-30 12:08:51.2474|ERROR|tcp_server.Server|Stop listening for new clients.

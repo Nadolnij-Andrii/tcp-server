@@ -1,0 +1,195 @@
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+F:\3\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+F:\3\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojResolveAssemblyReference.cache
+F:\3\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+F:\3\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+F:\3\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+F:\3\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe.config
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.exe
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\WebSyncContract.pdb
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
+F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb

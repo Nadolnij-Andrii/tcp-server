@@ -1,0 +1,615 @@
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\obj\Debug\tcp-server.csprojResolveAssemblyReference.cache
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\NLog.dll
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\NLog.xml
+C:\Users\denis\Documents\Visual Studio 2015\Projects\net\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.config
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Owin.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\NLog.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\ru\System.Data.SqlServerCe.resources.dll
+G:\f\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\bin\Debug\ru\System.Data.SqlServerCe.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (3)\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\bin\Debug\ru\System.Data.SqlServerCe.resources.dll
+D:\Nadolnuy\RAZRABOTKA\tcp-server — копия (4) — копия\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\local_server_GK\Новый том\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+F:\1\tcp-server\tcp-server\bin\Debug\NLog.config
+F:\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+F:\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+F:\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+F:\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+F:\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+F:\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+F:\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+F:\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+F:\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+F:\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+F:\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+F:\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+F:\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+F:\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+F:\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+F:\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+F:\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+F:\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+F:\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+F:\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojResolveAssemblyReference.cache
+F:\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+F:\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+F:\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+F:\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+F:\3\1\tcp-server\tcp-server\bin\Debug\NLog.config
+F:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+F:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+F:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+F:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+F:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+F:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+F:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+F:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojResolveAssemblyReference.cache
+F:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+F:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+F:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+F:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+E:\3\1\tcp-server\tcp-server\bin\Debug\NLog.config
+E:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+E:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+E:\3\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+E:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+E:\3\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+E:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+E:\3\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+E:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+E:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+E:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+E:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+E:\3\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\NLog.config
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Data.SqlServerCe.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.Files.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Synchronization.SimpleProviders.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Quartz.dll
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Quartz.pdb
+D:\Nadolnuy\RAZRABOTKA\1\1\tcp-server\tcp-server\bin\Debug\Quartz.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\NLog.config
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe.config
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.exe
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\tcp-server.pdb
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\NLog.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Owin.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Quartz.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.Ado.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Simple.Data.SqlCe40.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.pdb
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\WebSyncContract.exe.config
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Microsoft.Owin.Hosting.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Newtonsoft.Json.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\NLog.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Quartz.pdb
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\Quartz.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Net.Http.Formatting.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.Owin.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\System.Web.Http.WebHost.xml
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csprojAssemblyReference.cache
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CoreCompileInputs.cache
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.csproj.CopyComplete
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.exe
+F:\Работа\work\01.02.2019\1\1\tcp-server\tcp-server\obj\Debug\tcp-server.pdb
