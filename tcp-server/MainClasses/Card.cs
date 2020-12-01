@@ -78,12 +78,18 @@ namespace tcp_server
                 if (cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
                 {
                     SqlConn conn = new SqlConn();
-                   
-                    int codeCardBusiness = companyCode;
 
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
-
+                    var codeCardBusiness = matches[0].ToString();
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     if (matches[0].ToString() == codeCardBusiness.ToString())
                     {
                         if (matches.Count > 3)
@@ -143,11 +149,27 @@ namespace tcp_server
                     var matches = Regex.Matches(newCardInfoString, @"([0-9])+");
                     if (matches.Count > 3)
                     {
-                        string newCardId = matches[1].ToString();
+                        string newCardId = matches[2].ToString();
+                        if (matches[0].ToString() == "790")
+                        {
+                            newCardId = matches[2].ToString();
+                        }
+                        else if (matches[0].ToString() == "111")
+                        {
+                            newCardId = matches[1].ToString();
+                        }
                         matches = Regex.Matches(oldCardInfoString, @"([0-9])+");
                         if (matches.Count > 3)
                         {
-                            string oldCardId = matches[1].ToString();
+                            string oldCardId = matches[2].ToString();
+                            if (matches[0].ToString() == "790")
+                            {
+                                oldCardId = matches[2].ToString();
+                            }
+                            else if (matches[0].ToString() == "111")
+                            {
+                                oldCardId = matches[1].ToString();
+                            }
                             SqlConn conn = new SqlConn();
 
                             Card oldCard = conn.selectCard("cards", "card_id='" + oldCardId + "'");
@@ -228,7 +250,15 @@ namespace tcp_server
         public static bool  cashierCheck(string loginCard, string ip, int companyCode)
         {
             MatchCollection matches = Regex.Matches(loginCard, @"([0-9])+");
-            var cardLoginId = matches[1].ToString();
+            var cardLoginId = matches[2].ToString();
+            if (matches[0].ToString() == "790")
+            {
+                cardLoginId = matches[2].ToString();
+            }
+            else if (matches[0].ToString() == "111")
+            {
+                cardLoginId = matches[1].ToString();
+            }
             if (matches.Count > 3)
             {
                 if (licenseCheck(loginCard))
@@ -276,14 +306,18 @@ namespace tcp_server
             cardLicenseClass = Card.selectCardLicense(matches[1].ToString());
             if (matches.Count > 3)
             {
-                if(Int32.Parse(matches[1].ToString()) >= 13000)
+                if (Int32.Parse(matches[0].ToString()) == 790)
+                {
+                    return true;
+                }
+                if (Int32.Parse(matches[1].ToString()) >= 13000)
                 if (Int32.Parse(matches[0].ToString()) == 111 && Int32.Parse(matches[1].ToString()) <= 10000 && Int32.Parse(matches[2].ToString()) == 1 && Int32.Parse(matches[3].ToString()) == 20181)
                 {
                     return true;
                 }
                 else if(cardLicenseClass != null 
-                        && cardLicenseClass.cardId.ToString() == matches[1].ToString()
-                        && cardLicenseClass.License == matches[3].ToString())
+                    && cardLicenseClass.cardId.ToString() == matches[1].ToString()
+                    && cardLicenseClass.License == matches[3].ToString())
                 {
                         return true;
                 }
@@ -356,8 +390,16 @@ namespace tcp_server
             {
                 SqlConn conn = new SqlConn();
                 var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
-                string cardId = matches[1].ToString();
-                if (matches[0].ToString() == companyCode.ToString() && matches.Count > 3)
+                string cardId = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
+                if (matches.Count > 3)
                 {
                     Card inputCard = conn.select("cards", "card_id='" + cardId + "'");
                     if (inputCard != null)
@@ -393,7 +435,17 @@ namespace tcp_server
                 MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
                 if (matches.Count > 3)
                 {
-                    int cardId = Int32.Parse(matches[1].ToString());
+                    string cardId1 = "";
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId1 = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId1 = matches[1].ToString();
+                    }
+                    int cardId = Int32.Parse(cardId1.ToString());
+
                     CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
                     if (licenseCheck(cardInfo.inputInfo))
                     {
@@ -451,7 +503,16 @@ namespace tcp_server
             MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
             if (matches.Count > 3)
             {
-                int cardId = Int32.Parse(matches[1].ToString());
+                string cardId1 = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId1 = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId1 = matches[1].ToString();
+                }
+                int cardId = Int32.Parse(cardId1.ToString());
                 Card card = null;
                 var parameters = new List<Pair>();
                 parameters.Add(new Pair() { key = "card_id", value = cardId });
@@ -489,7 +550,16 @@ namespace tcp_server
             MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
             if (matches.Count > 3)
             {
-                int cardId = Int32.Parse(matches[1].ToString());
+                string cardId1 = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId1 = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId1 = matches[1].ToString();
+                }
+                int cardId = Int32.Parse(cardId1.ToString());
                 Card card = null;
                 var parameters = new List<Pair>();
                 parameters.Add(new Pair() { key = "card_id", value = cardId });
@@ -521,23 +591,31 @@ namespace tcp_server
         public static bool addTransaction(
             int transactionCardId,
             int transactionToCardId,
-            int operation, 
+            int operation,
             decimal summ,
             decimal bonuses,
             int tikets,
-            string loginCardInfo, 
+            string loginCardInfo,
             string ip,
             decimal cardSumm,
             decimal cardBonuses,
-            int cardTickets, 
+            int cardTickets,
             int companyCode)
         {
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
-            if(matches.Count > 3)
-            { 
-            var cardLoginId = matches[1].ToString();
-            var parameters = new List<Pair>();
+            if (matches.Count > 3)
+            {
+                var cardLoginId = matches[1].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardLoginId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardLoginId = matches[1].ToString();
+                }
+                var parameters = new List<Pair>();
                 Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
                 {
@@ -586,7 +664,15 @@ namespace tcp_server
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
             var cardLoginId = matches[1].ToString();
-            if(matches.Count > 3)
+            if (matches[0].ToString() == "790")
+            {
+                cardLoginId = matches[2].ToString();
+            }
+            else if (matches[0].ToString() == "111")
+            {
+                cardLoginId = matches[1].ToString();
+            }
+            if (matches.Count > 3)
             { 
             Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
@@ -659,6 +745,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card  = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -724,8 +818,24 @@ namespace tcp_server
                 {
                     var matches = Regex.Matches(toCardInfoString, @"([0-9])+");
                     string toCardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        toCardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        toCardId = matches[1].ToString();
+                    }
                     matches = Regex.Matches(fromCardInfoString, @"([0-9])+");
                     string fromCardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        fromCardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        fromCardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card toCard = conn.selectCard("cards", "card_id='" + toCardId + "'");
@@ -827,6 +937,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -867,6 +985,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -895,6 +1021,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -924,6 +1058,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -954,6 +1096,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -981,6 +1131,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1012,6 +1170,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1043,6 +1209,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1074,6 +1248,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1100,6 +1282,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1165,10 +1355,18 @@ namespace tcp_server
         {
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
-            if(matches.Count > 3)
-            { 
-            var cardLoginId = matches[1].ToString();
-            var parameters = new List<Pair>();
+            if (matches.Count > 3)
+            {
+                var cardLoginId = matches[1].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardLoginId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardLoginId = matches[1].ToString();
+                }
+                var parameters = new List<Pair>();
 
                 Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
@@ -1208,6 +1406,14 @@ namespace tcp_server
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
                     CardPrice cardPrice = new CardPrice();
 
@@ -1300,6 +1506,10 @@ namespace tcp_server
                     if (inputCard != null)
                     {
                         CardLicense cardLicense = selectCardLicense(number.ToString());
+                        if(matches[0].ToString() == "790")
+                        {
+                            return ";" + 790 + "=" + 31217 + "=" + number.ToString() + "=" + 1198704 + "=" + 88 + "?";
+                        }
                         if (cardLicense != null && cardLicense.id > 0)
                         {
                             return ";"+companyCode+"="+number.ToString()+"="+serverNumber+"="+ cardLicense.License +"?";

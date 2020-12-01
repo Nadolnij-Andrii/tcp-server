@@ -632,6 +632,14 @@ namespace tcp_server
                             var groups = Regex.Matches(cc, @"([0-9]+)");
 
                             var cc1 = groups[1].ToString();
+                            if (groups[0].ToString() == "790")
+                            {
+                                cc1 = groups[2].ToString();
+                            }
+                            else if (groups[0].ToString() == "111")
+                            {
+                                cc1 = groups[1].ToString();
+                            }
                             int cardId = Int32.Parse(cc1);
                             if (groups.Count > 3)
                             {
