@@ -57,13 +57,13 @@ namespace tcp_server
             
             if (checkLicense())
             {
-
                 MakeBackUp();
                 // Enter the listening loop.
                 var threadAPI = new Thread(() => { this.WorkWithAPI(); });
                 threadAPI.Name = "threadAPI";
                 threadAPI.Start();
-                
+                CheckBDaySale();
+                //CheckDayBonuses(new object());
                 timer = new Timer(new TimerCallback(MakeBackUpInTime), null, 0, interval);
                 //timerSync = new Timer(new TimerCallback(DoSync), null, 0, intervalSync);
                 timerCheckSales = new Timer(new TimerCallback(CheckSales), null, 0, 60000);
@@ -79,14 +79,9 @@ namespace tcp_server
                 this.server = new TcpListener(endPoint);
                 Console.WriteLine("Server starting on {0}", endPoint);
                 logger.Info("Server starting on: " + endPoint);
-                //timerCheckAttraction = new Timer(new TimerCallback(CheckAttractions), null, 30000,15000);
-                SqlConn sql = new SqlConn();
-                CheckBDaySale();
-                CheckDayBonuses(new object());
-               
                 //sale_count(5, sql.selectAttraction("attractions", "id='1010'"));
                 //Card.licenseCheck(";111=104123=3=13722819?");
-                //Console.WriteLine(pay(sql.selectAttraction("attractions", "id='10'"),sql.selectCard("cards", "card_id='1'"),(111).ToString()));
+               // Console.WriteLine(pay(sql.selectAttraction("attractions", "id='10'"),sql.selectCard("cards", "card_id='20888'"),(790).ToString()));
             }
         }
         public static int code;
@@ -102,9 +97,9 @@ namespace tcp_server
         {
             try
             {
-                 //Card.licenseCheck(";111=27972=2=17388515?");
+                //Card.licenseCheck(";111=27972=2=17388515?");
                 License licenseLocal = new License();
-               // Card.cashierCheck("111=2796=2=32635310","127.0.0.1", 111);
+                // Card.cashierCheck("111=2796=2=32635310","127.0.0.1", 111);
                 APP_PATH = ConfigurationManager.AppSettings.Get("globalServerURL");
                 if (File.Exists("./config.txt"))
                 {
@@ -204,8 +199,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return false;
             }
         }
@@ -307,9 +302,10 @@ namespace tcp_server
                 {
                     try
                     {
+                        if(PD.Value != null)
                         BIOS += PD.Name.ToString() + ": " + PD.Value.ToString() + " \n";
                     }
-                    catch
+                    catch(Exception ex)
                     {
                         continue;
                     }
@@ -437,7 +433,6 @@ namespace tcp_server
             catch (Exception e)
             {
                 logger.Error(e, "Unhendles exception: " + e.Message);
-                
             }
             //finally
             //{
@@ -511,7 +506,7 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                logger.Error("API: " + exc.Message);
+                logger.Error("API: " + exc.ToString());
             }
         }
         //Аттракцион открыл соединение. 
@@ -632,6 +627,14 @@ namespace tcp_server
                             var groups = Regex.Matches(cc, @"([0-9]+)");
 
                             var cc1 = groups[1].ToString();
+                            if (groups[0].ToString() == "790")
+                            {
+                                cc1 = groups[2].ToString();
+                            }
+                            else if (groups[0].ToString() == "111")
+                            {
+                                cc1 = groups[1].ToString();
+                            }
                             int cardId = Int32.Parse(cc1);
                             if (groups.Count > 3)
                             {
@@ -726,7 +729,7 @@ namespace tcp_server
             TimeSpan timeSpanTo = new TimeSpan(20, 00, 59);
             int adminCardRole = 1;
             string codeOfCompany = code.ToString();
-            if (codeOfCompany == companyCode)
+            if (codeOfCompany == companyCode || (790).ToString() == companyCode)
             {
                 if ((int)card.cardStatus == 0) return this.messageToAttraction(2, "КАРТА НЕ   ", "АКТИВИРОВАНА");
                 if ((int)card.cardStatus == 2) return this.messageToAttraction(2, "KAРTA", "ЗАБЛОКИРОВАНА");
@@ -842,7 +845,7 @@ namespace tcp_server
 
                                     if (res)
                                     {
-                                        conn.log(card.cardId, 10, 0, cardCount, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
+                                        conn.log(card.cardId, 10, cardCount, 0, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 24, 0, ostatoc, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
                                         conn.close();
                                         return this.messageToAttraction(1, "СПИСАНО: " + Decimal.ToInt32(price), "ДБОНУСОВ: " + Decimal.ToInt32(ostatoc)); ;
@@ -863,7 +866,7 @@ namespace tcp_server
 
                                     if (res)
                                     {
-                                        conn.log(card.cardId, 10, 0, cardCount, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
+                                        conn.log(card.cardId, 10, cardCount, 0, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 9, 0, ostatoc, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 24, 0, dayBonus, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.close();
@@ -961,7 +964,7 @@ namespace tcp_server
             }
             catch(Exception exc)
             {
-                logger.Error("Ошибка выбора скидки: " + exc.Message);
+                logger.Error("Ошибка выбора скидки: " + exc.ToString());
                 return 0;
             }
         }
@@ -1045,7 +1048,7 @@ namespace tcp_server
             }
             catch(Exception exc)
             {
-                logger.Error(exc.Message, "Ошибка получения списка скидок");
+                logger.Error(exc.ToString(), "Ошибка получения списка скидок");
             }
 
         }
@@ -1090,12 +1093,12 @@ namespace tcp_server
         {
             SqlConn sqlConn = new SqlConn();
             List<Card> cards = new List<Card>();
-            cards = sqlConn.selectCards("cards", "card_day_bonus_date > '"+ new DateTime(20,10,2020).ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'" + " and card_day_bonus_date < '" + DateTime.Now.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'");
+            cards = sqlConn.selectCards("cards", "card_day_bonus_date > '"+ new DateTime(2020,10,20).ToString("yyyy.MM.dd", System.Globalization.CultureInfo.InvariantCulture) + "'" + " and card_day_bonus_date < '" + DateTime.Now.ToString("yyyy.MM.dd", System.Globalization.CultureInfo.InvariantCulture) + "'");
             foreach (var card in cards)
             {
                 List<Pair> pairs = new List<Pair>();
                 pairs.Add(new Pair("card_day_bonus", 0));
-                pairs.Add(new Pair("card_day_bonus_date", new DateTime(20, 10, 2020)));
+                pairs.Add(new Pair("card_day_bonus_date", new DateTime(2020, 10, 20)));
                 sqlConn.update("cards", "card_id='" + card.cardId + "'", pairs);
             }
         }
@@ -1154,14 +1157,14 @@ namespace tcp_server
                     }
                     else
                     {
-                       logger.Error(exc.Message);
+                       logger.Error(exc.ToString());
                         return null;
                     }
                 }
             }
             catch(Exception exc)
             {
-                logger.Error(exc.Message);
+                logger.Error(exc.ToString());
                 return null;
             }
         }

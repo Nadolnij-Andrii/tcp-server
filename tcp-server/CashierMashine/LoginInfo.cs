@@ -37,7 +37,15 @@ namespace tcp_server
             {
                 
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -98,8 +106,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
 
@@ -182,7 +190,15 @@ namespace tcp_server
             {
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -238,8 +254,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
 
@@ -250,7 +266,15 @@ namespace tcp_server
             {
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -377,8 +401,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
 
@@ -389,7 +413,15 @@ namespace tcp_server
             {
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -499,8 +531,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
 
@@ -512,7 +544,15 @@ namespace tcp_server
                 WorkShiftReport workShiftReport = new WorkShiftReport();
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -549,8 +589,8 @@ namespace tcp_server
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -561,7 +601,15 @@ namespace tcp_server
                 WorkShiftReport workShiftReport = new WorkShiftReport();
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -619,8 +667,8 @@ namespace tcp_server
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -631,7 +679,15 @@ namespace tcp_server
                 WorkShiftReport workShiftReport = new WorkShiftReport();
                 loginInfoResponce = new LoginInfoResponce();
                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                var cardId = matches[1].ToString();
+                var cardId = matches[2].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
                 if (matches.Count > 3)
                 {
                     if (Card.licenseCheck(cardInfo))
@@ -699,8 +755,8 @@ namespace tcp_server
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }

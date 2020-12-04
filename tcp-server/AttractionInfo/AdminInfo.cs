@@ -61,6 +61,14 @@ namespace tcp_server
                         {
                             var matches = Regex.Matches(changedAdmin.cardInfo, @"([0-9])+");
                             string cardId = matches[1].ToString();
+                            if (matches[0].ToString() == "790")
+                            {
+                                cardId = matches[2].ToString();
+                            }
+                            else if (matches[0].ToString() == "111")
+                            {
+                                cardId = matches[1].ToString();
+                            }
                             if (conn.selectCard("cards", "card_id='" + cardId + "'") == null)
                             {
                                 Card card = new Card();
@@ -141,6 +149,14 @@ namespace tcp_server
                     {
                         var matches = Regex.Matches(changedAdmin.cardInfo, @"([0-9])+");
                         string cardId = matches[1].ToString();
+                        if (matches[0].ToString() == "790")
+                        {
+                            cardId = matches[2].ToString();
+                        }
+                        else if (matches[0].ToString() == "111")
+                        {
+                            cardId = matches[1].ToString();
+                        }
                         if (conn.selectCard("cards", "card_id='" + cardId + "'") == null)
                         {
                             Card card = new Card();

@@ -71,36 +71,43 @@ namespace tcp_server
             this.Email = Email;
             this.TotalGames = TotalGames;
         }
-        public static string selectCard(CardInfo cardInfo, int companyCode)
+        public static string selectCard(CardInfo cardInfo)
         {
             try
             {
-                if (cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if (cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     SqlConn conn = new SqlConn();
-                   
-                    int codeCardBusiness = companyCode;
 
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
-
+                    var codeCardBusiness = matches[0].ToString();
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     if (matches[0].ToString() == codeCardBusiness.ToString())
                     {
                         if (matches.Count > 3)
                         {
                             Card inputCard = conn.select("cards", "card_id='" + cardId + "'");
-                            inputCard.TotalAccrued = selectAllIncomeOnCard(cardId);
-                            inputCard.TotalSpend = Card.selectAllSpendOnCard(cardId);
-                            inputCard.TotalGames = selectAllGames(cardId);
-                            ClientContact  clientContact = selectClientContact(cardId);
-                            if(clientContact != null)
-                            {
-                                inputCard.Telephone = clientContact.telephone;
-                                inputCard.Email = clientContact.email;
-                            }
+
+                            ClientContact clientContact = selectClientContact(cardId);
+                            
                             if (inputCard != null)
                             {
-
+                                if (clientContact != null)
+                                {
+                                    inputCard.Telephone = clientContact.telephone;
+                                    inputCard.Email = clientContact.email;
+                                }
+                                inputCard.TotalAccrued = selectAllIncomeOnCard(cardId);
+                                inputCard.TotalSpend = Card.selectAllSpendOnCard(cardId);
+                                inputCard.TotalGames = selectAllGames(cardId);
                                 if (licenseCheck(cardInfo.inputInfo))
                                 {
                                     return JsonConvert.SerializeObject(inputCard);
@@ -111,7 +118,7 @@ namespace tcp_server
                                 }
                             }
                         }
-                       return null;
+                        return null;
                     }
                     else
                     {
@@ -125,15 +132,15 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
-            
+
         }
-        public static Card swap(string newCardInfoString, string oldCardInfoString, string loginCardInfo, string ip, int companyCode)
+        public static Card swap(string newCardInfoString, string oldCardInfoString, string loginCardInfo, string ip)
         {
-            if (cashierCheck(loginCardInfo, ip, companyCode))
+            if (cashierCheck(loginCardInfo, ip))
             {
                 CardInfo newCardInfo = new CardInfo(newCardInfoString, loginCardInfo, ip);
                 CardInfo oldCardInfo = new CardInfo(oldCardInfoString, loginCardInfo, ip);
@@ -143,11 +150,27 @@ namespace tcp_server
                     var matches = Regex.Matches(newCardInfoString, @"([0-9])+");
                     if (matches.Count > 3)
                     {
-                        string newCardId = matches[1].ToString();
+                        string newCardId = matches[2].ToString();
+                        if (matches[0].ToString() == "790")
+                        {
+                            newCardId = matches[2].ToString();
+                        }
+                        else if (matches[0].ToString() == "111")
+                        {
+                            newCardId = matches[1].ToString();
+                        }
                         matches = Regex.Matches(oldCardInfoString, @"([0-9])+");
                         if (matches.Count > 3)
                         {
-                            string oldCardId = matches[1].ToString();
+                            string oldCardId = matches[2].ToString();
+                            if (matches[0].ToString() == "790")
+                            {
+                                oldCardId = matches[2].ToString();
+                            }
+                            else if (matches[0].ToString() == "111")
+                            {
+                                oldCardId = matches[1].ToString();
+                            }
                             SqlConn conn = new SqlConn();
 
                             Card oldCard = conn.selectCard("cards", "card_id='" + oldCardId + "'");
@@ -180,7 +203,7 @@ namespace tcp_server
                                 res = conn.update("cards", "id='" + oldCard.id + "'", parameters);
                                 if (res != false)
                                 {
-                                    upgradeCardState(oldCard.cardId, newCardId, 3, "Карта " + oldCard.cardId + " заменена на карту " + newCardId, loginCardInfo, ip, 0, 0, 0, companyCode);
+                                    upgradeCardState(oldCard.cardId, newCardId, 3, "Карта " + oldCard.cardId + " заменена на карту " + newCardId, loginCardInfo, ip, 0, 0, 0);
                                     addTransaction(
                                         oldCard.cardId,
                                         int.Parse(newCardId),
@@ -191,8 +214,7 @@ namespace tcp_server
                                         ip,
                                         0,
                                         0,
-                                        0,
-                                        companyCode);
+                                        0);
                                     //Возвращаем новую карту
                                     parameters = new List<Pair>();
                                     parameters.Add(new Pair("card_id", newCardId));
@@ -206,8 +228,8 @@ namespace tcp_server
                                     parameters.Add(new Pair("parent_name", oldCard.cardParentName));
                                     parameters.Add(new Pair("adult_card", 1));
                                     conn.insert("client_info", parameters);
-                                    addTransaction(int.Parse(newCardId), 0, 14, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, oldCard.cardTicket, loginCardInfo, ip, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, (int)oldCard.cardTicket, companyCode);
-                                    upgradeCardState(newCardId, 0, 1, "Карта " + newCardId + " активированна", loginCardInfo, ip, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, oldCard.cardTicket, companyCode);
+                                    addTransaction(int.Parse(newCardId), 0, 14, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, oldCard.cardTicket, loginCardInfo, ip, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, (int)oldCard.cardTicket);
+                                    upgradeCardState(newCardId, 0, 1, "Карта " + newCardId + " активированна", loginCardInfo, ip, (decimal)oldCard.cardCount, (decimal)oldCard.cardBonus, oldCard.cardTicket);
                                     return conn.select("cards", "card_id='" + newCardId + "'");
                                 }
                             }
@@ -225,10 +247,18 @@ namespace tcp_server
             }
             return null;
         }
-        public static bool  cashierCheck(string loginCard, string ip, int companyCode)
+        public static bool  cashierCheck(string loginCard, string ip)
         {
             MatchCollection matches = Regex.Matches(loginCard, @"([0-9])+");
-            var cardLoginId = matches[1].ToString();
+            var cardLoginId = matches[2].ToString();
+            if (matches[0].ToString() == "790")
+            {
+                cardLoginId = matches[2].ToString();
+            }
+            else if (matches[0].ToString() == "111")
+            {
+                cardLoginId = matches[1].ToString();
+            }
             if (matches.Count > 3)
             {
                 if (licenseCheck(loginCard))
@@ -276,14 +306,18 @@ namespace tcp_server
             cardLicenseClass = Card.selectCardLicense(matches[1].ToString());
             if (matches.Count > 3)
             {
-                if(Int32.Parse(matches[1].ToString()) >= 13000)
+                if (Int32.Parse(matches[0].ToString()) == 790)
+                {
+                    return true;
+                }
+                if (Int32.Parse(matches[1].ToString()) >= 13000)
                 if (Int32.Parse(matches[0].ToString()) == 111 && Int32.Parse(matches[1].ToString()) <= 10000 && Int32.Parse(matches[2].ToString()) == 1 && Int32.Parse(matches[3].ToString()) == 20181)
                 {
                     return true;
                 }
                 else if(cardLicenseClass != null 
-                        && cardLicenseClass.cardId.ToString() == matches[1].ToString()
-                        && cardLicenseClass.License == matches[3].ToString())
+                    && cardLicenseClass.cardId.ToString() == matches[1].ToString()
+                    && cardLicenseClass.License == matches[3].ToString())
                 {
                         return true;
                 }
@@ -350,14 +384,22 @@ namespace tcp_server
             }
             return false;
         }
-        public static bool licenseCheckResponse(CardInfo cardInfo, int companyCode)
+        public static bool licenseCheckResponse(CardInfo cardInfo)
         {
             try
             {
                 SqlConn conn = new SqlConn();
                 var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
-                string cardId = matches[1].ToString();
-                if (matches[0].ToString() == companyCode.ToString() && matches.Count > 3)
+                string cardId = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId = matches[1].ToString();
+                }
+                if (matches.Count > 3)
                 {
                     Card inputCard = conn.select("cards", "card_id='" + cardId + "'");
                     if (inputCard != null)
@@ -373,8 +415,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return false;
             }
         }
@@ -388,12 +430,22 @@ namespace tcp_server
             )
         {
 
-            if(cashierCheck(loginCard, ip, companyCode))
+            if(cashierCheck(loginCard, ip))
             {
                 MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
                 if (matches.Count > 3)
                 {
-                    int cardId = Int32.Parse(matches[1].ToString());
+                    string cardId1 = "";
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId1 = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId1 = matches[1].ToString();
+                    }
+                    int cardId = Int32.Parse(cardId1.ToString());
+
                     CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
                     if (licenseCheck(cardInfo.inputInfo))
                     {
@@ -409,7 +461,7 @@ namespace tcp_server
                         parameters.Add(new Pair() { key = "parent_name", value = (object)parentName });
                         parameters.Add(new Pair() { key = "card_reg_date", value = DateTime.Now });
                         parameters.Add(new Pair() { key = "card_day_bonus", value = 0 });
-                        parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(20,10,2020) });
+                        parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(2020,10,20) });
                         SqlConn conn = new SqlConn();
                         var res = conn.insert("cards", parameters);
 
@@ -420,10 +472,10 @@ namespace tcp_server
 
                             if (swap == false)
                             {
-                                upgradeCardState(cardId, 0, 15, "зарегистрированна новая карта №" + cardId.ToString(), loginCard, ip, 0, 0, 0, companyCode);
-                                upgradeCardState(cardId, 0, 16, "установлен пакет скидка " + 0 + "%", loginCard, ip, 0, 0, 0, companyCode);
+                                upgradeCardState(cardId, 0, 15, "зарегистрированна новая карта №" + cardId.ToString(), loginCard, ip, 0, 0, 0);
+                                upgradeCardState(cardId, 0, 16, "установлен пакет скидка " + 0 + "%", loginCard, ip, 0, 0, 0);
                             }
-                            upgradeCardState(cardId, 0, 1, "карта " + cardId.ToString() + " активированна", loginCard, ip, 0, 0, 0, companyCode);
+                            upgradeCardState(cardId, 0, 1, "карта " + cardId.ToString() + " активированна", loginCard, ip, 0, 0, 0);
 
                             card = conn.select("cards", "card_id='" + cardId.ToString() + "'");
                             conn.close();
@@ -451,7 +503,16 @@ namespace tcp_server
             MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
             if (matches.Count > 3)
             {
-                int cardId = Int32.Parse(matches[1].ToString());
+                string cardId1 = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId1 = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId1 = matches[1].ToString();
+                }
+                int cardId = Int32.Parse(cardId1.ToString());
                 Card card = null;
                 var parameters = new List<Pair>();
                 parameters.Add(new Pair() { key = "card_id", value = cardId });
@@ -464,7 +525,7 @@ namespace tcp_server
                 parameters.Add(new Pair() { key = "parent_name", value = (object)cashierName });
                 parameters.Add(new Pair() { key = "card_reg_date", value = DateTime.Now });
                 parameters.Add(new Pair() { key = "card_day_bonus", value = 0 });
-                parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(20, 10, 2020) });
+                parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(2020, 10, 20) });
                 SqlConn conn = new SqlConn();
                 var res = conn.insert("cards", parameters);
                 if (res != false)
@@ -489,7 +550,16 @@ namespace tcp_server
             MatchCollection matches = Regex.Matches(cardInfoString, @"([0-9])+");
             if (matches.Count > 3)
             {
-                int cardId = Int32.Parse(matches[1].ToString());
+                string cardId1 = "";
+                if (matches[0].ToString() == "790")
+                {
+                    cardId1 = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardId1 = matches[1].ToString();
+                }
+                int cardId = Int32.Parse(cardId1.ToString());
                 Card card = null;
                 var parameters = new List<Pair>();
                 parameters.Add(new Pair() { key = "card_id", value = cardId });
@@ -502,7 +572,7 @@ namespace tcp_server
                 parameters.Add(new Pair() { key = "parent_name", value = (object)adminName });
                 parameters.Add(new Pair() { key = "card_reg_date", value = DateTime.Now });
                 parameters.Add(new Pair() { key = "card_day_bonus", value = 0 });
-                parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(20, 10, 2020) });
+                parameters.Add(new Pair() { key = "card_day_bonus_date", value = new DateTime(2020, 10, 20) });
                 SqlConn conn = new SqlConn();
                 var res = conn.insert("cards", parameters);
                 if (res != false)
@@ -521,23 +591,30 @@ namespace tcp_server
         public static bool addTransaction(
             int transactionCardId,
             int transactionToCardId,
-            int operation, 
+            int operation,
             decimal summ,
             decimal bonuses,
             int tikets,
-            string loginCardInfo, 
+            string loginCardInfo,
             string ip,
             decimal cardSumm,
             decimal cardBonuses,
-            int cardTickets, 
-            int companyCode)
+            int cardTickets)
         {
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
-            if(matches.Count > 3)
-            { 
-            var cardLoginId = matches[1].ToString();
-            var parameters = new List<Pair>();
+            if (matches.Count > 3)
+            {
+                var cardLoginId = matches[1].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardLoginId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardLoginId = matches[1].ToString();
+                }
+                var parameters = new List<Pair>();
                 Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
                 {
@@ -561,7 +638,6 @@ namespace tcp_server
                             parameters.Add(new Pair("summ_balance", cardSumm));
                             parameters.Add(new Pair("bonuses_balance", cardBonuses));
                             parameters.Add(new Pair("tickets_balance", cardTickets));
-
                             var res = conn.insert("transactions_cashiermashine", parameters);
                             return res;
                         }
@@ -579,14 +655,21 @@ namespace tcp_server
             string ip,
             decimal cardSumm,
             decimal cardBonuses,
-            int cardTickets,
-            int companyCode
+            int cardTickets
             )
         {
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
             var cardLoginId = matches[1].ToString();
-            if(matches.Count > 3)
+            if (matches[0].ToString() == "790")
+            {
+                cardLoginId = matches[2].ToString();
+            }
+            else if (matches[0].ToString() == "111")
+            {
+                cardLoginId = matches[1].ToString();
+            }
+            if (matches.Count > 3)
             { 
             Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
@@ -649,16 +732,24 @@ namespace tcp_server
             conn.insert("card_event", parameters);
             conn.close();
         }
-        public static Card replenishment(string cardInfoString, decimal cash, decimal cashlessPayment, decimal creditCard, string loginCard, string ip, int companyCode)
+        public static Card replenishment(string cardInfoString, decimal cash, decimal cashlessPayment, decimal creditCard, string loginCard, string ip)
         {
-            if(cashierCheck(loginCard,ip, companyCode))
+            if(cashierCheck(loginCard,ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if(licenseCheckResponse(cardInfo, companyCode))
+                if(licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card  = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -681,15 +772,15 @@ namespace tcp_server
                         card.cardCount = balance + cash + cashlessPayment + creditCard;
                         if( cash > 0)
                         {
-                            addTransaction(card.cardId, 0, 5, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash, (decimal)card.cardBonus, (int)card.cardTicket, companyCode);
+                            addTransaction(card.cardId, 0, 5, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash, (decimal)card.cardBonus, (int)card.cardTicket);
                         }
                         if (cashlessPayment > 0)
                         {
-                            addTransaction(card.cardId, 0, 18, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash + cashlessPayment, (decimal)card.cardBonus, (int)card.cardTicket, companyCode);
+                            addTransaction(card.cardId, 0, 18, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash + cashlessPayment, (decimal)card.cardBonus, (int)card.cardTicket);
                         }
                         if (creditCard > 0)
                         {
-                            addTransaction(card.cardId, 0, 19, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash + cashlessPayment + creditCard, (decimal)card.cardBonus, (int)card.cardTicket, companyCode);
+                            addTransaction(card.cardId, 0, 19, cash + cashlessPayment + creditCard, cardBonus, 0, loginCard, ip, balance + cash + cashlessPayment + creditCard, (decimal)card.cardBonus, (int)card.cardTicket);
                         }
                         return card;
                     }
@@ -698,9 +789,9 @@ namespace tcp_server
             }
             return null;
         }
-        public static StartInfo getStartInfo(string loginCardInfo, string ip, int companyCode)
+        public static StartInfo getStartInfo(string loginCardInfo, string ip)
         {
-            if (cashierCheck(loginCardInfo, ip, companyCode))
+            if (cashierCheck(loginCardInfo, ip))
             {
                 StartInfo startInfo = new StartInfo();
                 SqlConn conn = new SqlConn();
@@ -713,19 +804,35 @@ namespace tcp_server
                 return null;
             }
         }
-        public static Card transfer(string fromCardInfoString, string toCardInfoString, string loginCard, string ip, int companyCode)
+        public static Card transfer(string fromCardInfoString, string toCardInfoString, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo fromCardInfo = new CardInfo(fromCardInfoString, loginCard, ip);
                 CardInfo toCardInfo = new CardInfo(toCardInfoString, loginCard, ip);
 
-                if (licenseCheckResponse(fromCardInfo, companyCode) && licenseCheckResponse(toCardInfo, companyCode))
+                if (licenseCheckResponse(fromCardInfo) && licenseCheckResponse(toCardInfo))
                 {
                     var matches = Regex.Matches(toCardInfoString, @"([0-9])+");
                     string toCardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        toCardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        toCardId = matches[1].ToString();
+                    }
                     matches = Regex.Matches(fromCardInfoString, @"([0-9])+");
                     string fromCardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        fromCardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        fromCardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card toCard = conn.selectCard("cards", "card_id='" + toCardId + "'");
@@ -807,9 +914,9 @@ namespace tcp_server
                             parameters.Add(new Pair("parent_name", toCard.cardParentName));
                             parameters.Add(new Pair("adult_card", 1));
                             conn.insert("client_info", parameters);
-                            addTransaction(fromCard.cardId, toCard.cardId, 11, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, fromCard.cardTicket, loginCard, ip, 0, 0, 0, companyCode);
-                            addTransaction(toCard.cardId, 0, 12, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, fromCard.cardTicket, loginCard, ip, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, (int)fromCard.cardTicket, companyCode);
-                            upgradeCardState(fromCard.cardId, toCard.cardId, 4, "данные карты " + fromCard.cardId + " перенесены на карту " + toCard.cardId, loginCard, ip, 0, 0, 0, companyCode);
+                            addTransaction(fromCard.cardId, toCard.cardId, 11, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, fromCard.cardTicket, loginCard, ip, 0, 0, 0);
+                            addTransaction(toCard.cardId, 0, 12, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, fromCard.cardTicket, loginCard, ip, (decimal)fromCard.cardCount, (decimal)fromCard.cardBonus, (int)fromCard.cardTicket);
+                            upgradeCardState(fromCard.cardId, toCard.cardId, 4, "данные карты " + fromCard.cardId + " перенесены на карту " + toCard.cardId, loginCard, ip, 0, 0, 0);
                             return conn.select("cards", "card_id='" + toCard.cardId.ToString() + "'");
                         }
                     }
@@ -817,16 +924,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card removeCard(string cardInfoString, string loginCard, string ip, int companyCode)
+        public static Card removeCard(string cardInfoString, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -842,9 +957,9 @@ namespace tcp_server
                         if (res != false)
                         {
                             //this.conn.delete("[dbo].[client_info]", "card_id='" + this.cardId.ToString() + "'");
-                            upgradeCardState(card.cardId, 0, 2, "карта " + card.cardId + " возвращена", loginCard, ip, 0, 0, 0, companyCode);
-                            addTransaction(card.cardId, 0, 2, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket, loginCard, ip, 0, 0, 0, companyCode);
-                            UpdateWorkShift(0, 0, 0, card.cardCount, loginCard, ip, cardInfoString, companyCode);
+                            upgradeCardState(card.cardId, 0, 2, "карта " + card.cardId + " возвращена", loginCard, ip, 0, 0, 0);
+                            addTransaction(card.cardId, 0, 2, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket, loginCard, ip, 0, 0, 0);
+                            UpdateWorkShift(0, 0, 0, card.cardCount, loginCard, ip);
                             card.cardStatus = 2;
                             card.cardCount = 0;
                             card.cardBonus = 0;
@@ -857,16 +972,24 @@ namespace tcp_server
             } 
             return null;
         }
-        public static Card addBonuses(string cardInfoString, decimal bonuses, string loginCard, string ip, int companyCode)
+        public static Card addBonuses(string cardInfoString, decimal bonuses, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -876,7 +999,7 @@ namespace tcp_server
                     var res = conn.update("cards", "id='" + card.id + "'", parameters);
                     if (res != false)
                     {
-                        addTransaction(card.cardId, 0, 6, 0, bonuses, 0, loginCard, ip, (decimal)card.cardCount, balance + bonuses, (int)card.cardTicket, companyCode);
+                        addTransaction(card.cardId, 0, 6, 0, bonuses, 0, loginCard, ip, (decimal)card.cardCount, balance + bonuses, (int)card.cardTicket);
                         card.cardBonus = balance + bonuses;
                         return card;
                     }
@@ -885,16 +1008,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card addDayBonuses(string cardInfoString, decimal dayBonuses, string loginCard, string ip, int companyCode)
+        public static Card addDayBonuses(string cardInfoString, decimal dayBonuses, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -905,8 +1036,8 @@ namespace tcp_server
                     var res = conn.update("cards", "id='" + card.id + "'", parameters);
                     if (res != false)
                     {
-                        addTransaction(card.cardId, 0, 25, 0, dayBonuses, 0, loginCard, ip, (decimal)card.cardCount, balance + dayBonuses, (int)card.cardTicket, companyCode);
-                        card.cardBonus = balance + dayBonuses;
+                        addTransaction(card.cardId, 0, 25, 0, dayBonuses, 0, loginCard, ip, (decimal)card.cardCount, balance + dayBonuses, (int)card.cardTicket);
+                        card.cardDayBonus = balance + dayBonuses;
                         return card;
                     }
 
@@ -914,16 +1045,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card activateCard(string cardInfoString, string loginCard, string ip, int companyCode)
+        public static Card activateCard(string cardInfoString, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -935,7 +1074,7 @@ namespace tcp_server
                         var res = conn.update("cards", "card_id='" + card.cardId + "'", parameters);
                         if (res != false)
                         {
-                            upgradeCardState(card.cardId, 0, 1, "карта " + card.cardId + " активированна", loginCard, ip, 0, card.cardBonus, card.cardTicket, companyCode);
+                            upgradeCardState(card.cardId, 0, 1, "карта " + card.cardId + " активированна", loginCard, ip, 0, card.cardBonus, card.cardTicket);
                             card.cardStatus = 1;
                             return card;
                         }
@@ -944,16 +1083,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card addTickets(string cardInfoString, int tickets, string loginCard, string ip, int companyCode)
+        public static Card addTickets(string cardInfoString, int tickets, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -963,7 +1110,7 @@ namespace tcp_server
                     var res = conn.update("cards", "id='" + card.id + "'", parameters);
                     if (res != false)
                     {
-                        addTransaction(card.cardId, 0, 7, 0, 0, tickets, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, balance + tickets, companyCode);
+                        addTransaction(card.cardId, 0, 7, 0, 0, tickets, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, balance + tickets);
                         card.cardTicket = balance + tickets;
                         return card;
                     }
@@ -971,16 +1118,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card removeTicket(string cardInfoString,  int tickets, string loginCard, string ip, int companyCode)
+        public static Card removeTicket(string cardInfoString,  int tickets, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -993,7 +1148,7 @@ namespace tcp_server
                         var res = conn.update("cards", "id='" + card.id + "'", parameters);
                         if (res != false)
                         {
-                            addTransaction(card.cardId, 0, 9, 0, 0, tickets, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance, companyCode);
+                            addTransaction(card.cardId, 0, 9, 0, 0, tickets, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance);
                             card.cardTicket = newBalance;
                             return card;
                         }
@@ -1002,16 +1157,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card removeBonuses(string cardInfoString, int bonuses, string loginCard, string ip, int companyCode)
+        public static Card removeBonuses(string cardInfoString, int bonuses, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1024,7 +1187,7 @@ namespace tcp_server
                         var res = conn.update("cards", "id='" + card.id + "'", parameters);
                         if (res != false)
                         {
-                            addTransaction(card.cardId, 0, 21, 0, bonuses, 0, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance, companyCode);
+                            addTransaction(card.cardId, 0, 21, 0, bonuses, 0, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance);
                             card.cardBonus = newBalance;
                             return card;
                         }
@@ -1033,16 +1196,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card removeDayBonuses(string cardInfoString, int dayBonuses, string loginCard, string ip, int companyCode)
+        public static Card removeDayBonuses(string cardInfoString, int dayBonuses, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1055,8 +1226,8 @@ namespace tcp_server
                         var res = conn.update("cards", "id='" + card.id + "'", parameters);
                         if (res != false)
                         {
-                            addTransaction(card.cardId, 0, 26, 0, dayBonuses, 0, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance, companyCode);
-                            card.cardBonus = newBalance;
+                            addTransaction(card.cardId, 0, 26, 0, dayBonuses, 0, loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, (int)newBalance);
+                            card.cardDayBonus = newBalance;
                             return card;
                         }
                     }
@@ -1064,16 +1235,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card block(string cardInfoString, string loginCard, string ip, int companyCode)
+        public static Card block(string cardInfoString, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1082,7 +1261,7 @@ namespace tcp_server
                     var res = conn.update("cards", "id='" + card.id + "'", parameters);
                     if (res != false)
                     {
-                        upgradeCardState(card.cardId, 0, 0, "карта " + card.cardId + " заблокированна", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket, companyCode);
+                        upgradeCardState(card.cardId, 0, 0, "карта " + card.cardId + " заблокированна", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket);
                         card.cardStatus = 0;
                         return card;
                     }
@@ -1090,16 +1269,24 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card setPacket(string cardInfoString, int discount,  string loginCard, string ip, int companyCode)
+        public static Card setPacket(string cardInfoString, int discount,  string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
 
                     Card card = conn.selectCard("cards", "card_id='" + cardId + "'");
@@ -1116,7 +1303,7 @@ namespace tcp_server
                             if (res != false)
                             {
                                
-                                upgradeCardState(card.cardId, discount, 16, "установлен пакет скидка " + sales.Find(x => (int)x.saleId == discount).saleValue + "%", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket, companyCode);
+                                upgradeCardState(card.cardId, discount, 16, "установлен пакет скидка " + sales.Find(x => (int)x.saleId == discount).saleValue + "%", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket);
                                 card.cardSale = discount;
                                 return card;
                             }
@@ -1137,7 +1324,7 @@ namespace tcp_server
                                     parameters.Add(new Pair("date", DateTime.Now));
                                     if (conn.insert("bday_sales", parameters))
                                     {
-                                        upgradeCardState(card.cardId, discount, 16, "установлен пакет - день рождения - скидка " + sales.Find(x => (int)x.saleId == discount).saleValue + "%", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket, companyCode);
+                                        upgradeCardState(card.cardId, discount, 16, "установлен пакет - день рождения - скидка " + sales.Find(x => (int)x.saleId == discount).saleValue + "%", loginCard, ip, (decimal)card.cardCount, (decimal)card.cardBonus, card.cardTicket);
                                         card.cardSale = discount;
                                         return card;
                                     }
@@ -1159,16 +1346,22 @@ namespace tcp_server
             decimal creditCard,
             decimal refund,
             string loginCardInfo,
-            string ip,
-            string cardInfo,
-            int companyCode)
+            string ip)
         {
             SqlConn conn = new SqlConn();
             MatchCollection matches = Regex.Matches(loginCardInfo, @"([0-9])+");
-            if(matches.Count > 3)
-            { 
-            var cardLoginId = matches[1].ToString();
-            var parameters = new List<Pair>();
+            if (matches.Count > 3)
+            {
+                var cardLoginId = matches[1].ToString();
+                if (matches[0].ToString() == "790")
+                {
+                    cardLoginId = matches[2].ToString();
+                }
+                else if (matches[0].ToString() == "111")
+                {
+                    cardLoginId = matches[1].ToString();
+                }
+                var parameters = new List<Pair>();
 
                 Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");
                 if (currentCard != null)
@@ -1198,16 +1391,24 @@ namespace tcp_server
         {
             return this.id + "; " + this.cardId + "; " + this.cardCount + "; " + this.cardSale + "; " + this.cardRole + "; " + this.cardStatus + "; " + this.cardBonus + "; " + this.cardTicket + "; " + this.cardParentName + "; " + this.cardRegDate;
         }
-        public static CardPrice ReturnCashForCard(string cardInfoString, string loginCard, string ip, int companyCode)
+        public static CardPrice ReturnCashForCard(string cardInfoString, string loginCard, string ip)
         {
-            if (cashierCheck(loginCard, ip, companyCode))
+            if (cashierCheck(loginCard, ip))
             {
                 CardInfo cardInfo = new CardInfo(cardInfoString, loginCard, ip);
-                if (licenseCheckResponse(cardInfo, companyCode))
+                if (licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                     string cardId = matches[1].ToString();
+                    if (matches[0].ToString() == "790")
+                    {
+                        cardId = matches[2].ToString();
+                    }
+                    else if (matches[0].ToString() == "111")
+                    {
+                        cardId = matches[1].ToString();
+                    }
                     SqlConn conn = new SqlConn();
                     CardPrice cardPrice = new CardPrice();
 
@@ -1225,9 +1426,9 @@ namespace tcp_server
                             if (res != false)
                             {
                                 //this.conn.delete("[dbo].[client_info]", "card_id='" + this.cardId.ToString() + "'");
-                                upgradeCardState(card.cardId, 0, 20, "средства за карту " + card.cardId + " возвращены", loginCard, ip, 0, 0, 0, companyCode);
-                                addTransaction(card.cardId, 0, 20, cardPrice.cardPrice, 0, 0, loginCard, ip, 0, 0, 0, companyCode);
-                                UpdateWorkShift(0, 0, 0, cardPrice.cardPrice, loginCard, ip, cardInfoString, companyCode);
+                                upgradeCardState(card.cardId, 0, 20, "средства за карту " + card.cardId + " возвращены", loginCard, ip, 0, 0, 0);
+                                addTransaction(card.cardId, 0, 20, cardPrice.cardPrice, 0, 0, loginCard, ip, 0, 0, 0);
+                                UpdateWorkShift(0, 0, 0, cardPrice.cardPrice, loginCard, ip);
                                 card.cardStatus = 2;
                                 parameters = new List<Pair>();
                                 parameters.Add(new Pair("card_price", 0));
@@ -1246,11 +1447,11 @@ namespace tcp_server
             }
             return null;
         }
-        public static Card selectCardByNumber(int number, CardInfo cardInfo, int companyCode)
+        public static Card selectCardByNumber(int number, CardInfo cardInfo)
         {
             try
             {
-                if (cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if (cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     SqlConn conn = new SqlConn();
                     Card inputCard = conn.select("cards", "card_id='" + number + "'"); 
@@ -1263,8 +1464,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
 
@@ -1293,65 +1494,70 @@ namespace tcp_server
             {
                 var matches = Regex.Matches(cardInfo.loginCard, @"([0-9])+");
                 int serverNumber = Int32.Parse(matches[2].ToString()); 
-                if (cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if (cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     SqlConn conn = new SqlConn();
                     Card inputCard = conn.select("cards", "card_id='" + number + "'");
                     if (inputCard != null)
                     {
                         CardLicense cardLicense = selectCardLicense(number.ToString());
-                        if (cardLicense != null && cardLicense.id > 0)
-                        {
-                            return ";"+companyCode+"="+number.ToString()+"="+serverNumber+"="+ cardLicense.License +"?";
-                        }
-                        else
-                        {
-                            string[] soleMass = new string[] {
-                                    "?K ??\u007f(\u0006?? 7 ? (? wS\u001d?h\u0012?\u001e_I ?\u000eWS[; Q? bDH?S ???\u001a",
-                                    ";\u001c?twQ ???\u001b????\u000e*6 ?? 94be861f636938ad0a06d917d1f5b1be614678a638ae8",
-                                    "´GQá]8n±\u008agâr@\u0012²óæS\a¸daa47aaa2c1f0d660e89fccfc3adc70ca51fc6c1f337c",
-                                    "캁倴㑍諾닪瑨쨁쭻\"&m ?? t ?? v ??? l ?\u0019?f ^ M ?\u0014982f0f08d336e1c9041"
-                                 };
-                            int j = 0;
-                            if (number % 2 > 0)
-                            {
-                                j = 0;
-                            }
-                            else
-                            {
-                                j = 1;
-                            }
-                            byte[] cardCodeHash;
-                            byte[] cardIdHash;
-                            byte[] endHash;
-                            using (var deriveBytes = new Rfc2898DeriveBytes(companyCode.ToString(), Encoding.ASCII.GetBytes(soleMass[Math.Abs(0 + j - serverNumber)] + Math.Sin(Math.Log10((int)number)).ToString()), 20))
-                            {
-                                cardCodeHash = deriveBytes.GetBytes(40);
-                            }
-                            using (var deriveBytes = new Rfc2898DeriveBytes((number + serverNumber).ToString(), Encoding.ASCII.GetBytes(Math.Sin((int)number).ToString() + soleMass[Math.Abs(2 + j)]), 20))
-                            {
-                                cardIdHash = deriveBytes.GetBytes(40);
-                            }
-                            using (var deriveBytes = new Rfc2898DeriveBytes(cardIdHash, cardCodeHash, 50))
-                            {
-                                endHash = deriveBytes.GetBytes(10);
-                            }
+                        return ";" + 790 + "=" + 31217 + "=" + number.ToString() + "=" + 1198704 + "=" + 88 + "?";
+                        //if (matches[0].ToString() == "790")
+                        //{
+                        //    return ";" + 790 + "=" + 31217 + "=" + number.ToString() + "=" + 1198704 + "=" + 88 + "?";
+                        //}
+                        //if (cardLicense != null && cardLicense.id > 0)
+                        //{
+                        //    return ";"+companyCode+"="+number.ToString()+"="+serverNumber+"="+ cardLicense.License +"?";
+                        //}
+                        //else
+                        //{
+                        //    string[] soleMass = new string[] {
+                        //            "?K ??\u007f(\u0006?? 7 ? (? wS\u001d?h\u0012?\u001e_I ?\u000eWS[; Q? bDH?S ???\u001a",
+                        //            ";\u001c?twQ ???\u001b????\u000e*6 ?? 94be861f636938ad0a06d917d1f5b1be614678a638ae8",
+                        //            "´GQá]8n±\u008agâr@\u0012²óæS\a¸daa47aaa2c1f0d660e89fccfc3adc70ca51fc6c1f337c",
+                        //            "캁倴㑍諾닪瑨쨁쭻\"&m ?? t ?? v ??? l ?\u0019?f ^ M ?\u0014982f0f08d336e1c9041"
+                        //         };
+                        //    int j = 0;
+                        //    if (number % 2 > 0)
+                        //    {
+                        //        j = 0;
+                        //    }
+                        //    else
+                        //    {
+                        //        j = 1;
+                        //    }
+                        //    byte[] cardCodeHash;
+                        //    byte[] cardIdHash;
+                        //    byte[] endHash;
+                        //    using (var deriveBytes = new Rfc2898DeriveBytes(companyCode.ToString(), Encoding.ASCII.GetBytes(soleMass[Math.Abs(0 + j - serverNumber)] + Math.Sin(Math.Log10((int)number)).ToString()), 20))
+                        //    {
+                        //        cardCodeHash = deriveBytes.GetBytes(40);
+                        //    }
+                        //    using (var deriveBytes = new Rfc2898DeriveBytes((number + serverNumber).ToString(), Encoding.ASCII.GetBytes(Math.Sin((int)number).ToString() + soleMass[Math.Abs(2 + j)]), 20))
+                        //    {
+                        //        cardIdHash = deriveBytes.GetBytes(40);
+                        //    }
+                        //    using (var deriveBytes = new Rfc2898DeriveBytes(cardIdHash, cardCodeHash, 50))
+                        //    {
+                        //        endHash = deriveBytes.GetBytes(10);
+                        //    }
 
-                            string newCardLicence = "";
-                            foreach (var endElement in endHash)
-                            {
-                                newCardLicence += endElement.ToString();
-                            }
-                            return ";" + companyCode + "=" + number.ToString() + "=" + serverNumber + "=" + newCardLicence.Substring(0, 8).ToString() + "?";
-                        }
+                        //    string newCardLicence = "";
+                        //    foreach (var endElement in endHash)
+                        //    {
+                        //        newCardLicence += endElement.ToString();
+                        //    }
+                        //    return ";" + companyCode + "=" + number.ToString() + "=" + serverNumber + "=" + newCardLicence.Substring(0, 8).ToString() + "?";
+                        //}
                     }
                 }
                 return null;
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
