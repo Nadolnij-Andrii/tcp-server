@@ -629,6 +629,7 @@ namespace tcp_server
                             var cc1 = groups[1].ToString();
                             if (groups[0].ToString() == "790")
                             {
+
                                 cc1 = groups[2].ToString();
                             }
                             else if (groups[0].ToString() == "111")
