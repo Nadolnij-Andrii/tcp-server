@@ -134,13 +134,13 @@ namespace WebSyncContract
                     }
                     catch (Exception exc)
                     {
-                        Console.WriteLine("\nОшибка подключения к базе данных: " + exc.Message + "\nПовторите ввод данных базы.");
+                        Console.WriteLine("\nОшибка подключения к базе данных: " + exc.ToString() + "\nПовторите ввод данных базы.");
                     }
                 }
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
+                Console.WriteLine(exc.ToString());
                 return false;
             }
         }
@@ -308,7 +308,7 @@ namespace WebSyncContract
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
+                Console.WriteLine(exc.ToString());
                 return false;
             }
         }

@@ -204,8 +204,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return false;
             }
         }
@@ -511,7 +511,7 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                logger.Error("API: " + exc.Message);
+                logger.Error("API: " + exc.ToString());
             }
         }
         //Аттракцион открыл соединение. 
@@ -842,7 +842,7 @@ namespace tcp_server
 
                                     if (res)
                                     {
-                                        conn.log(card.cardId, 10, 0, cardCount, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
+                                        conn.log(card.cardId, 10, cardCount, 0, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 24, 0, ostatoc, attraction.id, 0, card.cardCount, dayBonus, (int)card.cardTicket);
                                         conn.close();
                                         return this.messageToAttraction(1, "СПИСАНО: " + Decimal.ToInt32(price), "ДБОНУСОВ: " + Decimal.ToInt32(ostatoc)); ;
@@ -863,7 +863,7 @@ namespace tcp_server
 
                                     if (res)
                                     {
-                                        conn.log(card.cardId, 10, 0, cardCount, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
+                                        conn.log(card.cardId, 10, cardCount, 0, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 9, 0, ostatoc, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.log(card.cardId, 24, 0, dayBonus, attraction.id, 0, card.cardCount, bonus, (int)card.cardTicket);
                                         conn.close();
@@ -961,7 +961,7 @@ namespace tcp_server
             }
             catch(Exception exc)
             {
-                logger.Error("Ошибка выбора скидки: " + exc.Message);
+                logger.Error("Ошибка выбора скидки: " + exc.ToString());
                 return 0;
             }
         }
@@ -1045,7 +1045,7 @@ namespace tcp_server
             }
             catch(Exception exc)
             {
-                logger.Error(exc.Message, "Ошибка получения списка скидок");
+                logger.Error(exc.ToString(), "Ошибка получения списка скидок");
             }
 
         }
@@ -1095,7 +1095,7 @@ namespace tcp_server
             {
                 List<Pair> pairs = new List<Pair>();
                 pairs.Add(new Pair("card_day_bonus", 0));
-                pairs.Add(new Pair("card_day_bonus_date", new DateTime(20, 10, 2020)));
+                pairs.Add(new Pair("card_day_bonus_date", new DateTime(2020, 10, 20)));
                 sqlConn.update("cards", "card_id='" + card.cardId + "'", pairs);
             }
         }
@@ -1154,14 +1154,14 @@ namespace tcp_server
                     }
                     else
                     {
-                       logger.Error(exc.Message);
+                       logger.Error(exc.ToString());
                         return null;
                     }
                 }
             }
             catch(Exception exc)
             {
-                logger.Error(exc.Message);
+                logger.Error(exc.ToString());
                 return null;
             }
         }

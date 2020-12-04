@@ -27,7 +27,7 @@ namespace tcp_server
         }
         public bool UpdateTimeLastPing(int companyCode)
         {
-            if (Card.cashierCheck(loginCard, ip, companyCode))
+            if (Card.cashierCheck(loginCard, ip))
             {
                 var parameters = new List<Pair>();
                 parameters.Add(new Pair() { key = "time_last_ping", value = timeLastPing });

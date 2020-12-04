@@ -25,7 +25,7 @@ namespace tcp_server
         }
         public void GetTransactionCashRegisterInfo(CardInfo cardInfo, int companyCode)
         {
-            if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+            if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
             {
                 if (Card.licenseCheckResponse(cardInfo, companyCode))
                 {

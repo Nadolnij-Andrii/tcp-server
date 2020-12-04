@@ -59,7 +59,7 @@ namespace tcp_server
         {
             try
             {
-                if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     if (Card.licenseCheckResponse(cardInfo, companyCode))
                     {

@@ -32,7 +32,7 @@ namespace tcp_server
         }
         public static bool formClosing(LoginInfo loginInfo, int companyCode)
         {
-            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP, companyCode))
+            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP))
             {
                 SqlConn conn = new SqlConn();
                 CashierRegister cashierRegister = conn.selectCashierRegister("cashierregister", "ip='" + loginInfo.IP + "'");

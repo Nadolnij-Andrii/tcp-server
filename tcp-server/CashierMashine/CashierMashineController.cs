@@ -51,8 +51,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -70,8 +70,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -103,8 +103,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -123,8 +123,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -149,8 +149,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -183,8 +183,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -216,8 +216,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -242,8 +242,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -276,8 +276,7 @@ namespace tcp_server
                            0,
                            replenishmentInfo.loginCard,
                            replenishmentInfo.ip,
-                           replenishmentInfo.cardInfo,
-                           companyCode);
+                           replenishmentInfo.cardInfo);
                 }
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -294,8 +293,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -329,8 +328,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -365,8 +364,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -401,8 +400,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -436,8 +435,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -472,8 +471,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -509,8 +508,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -544,8 +543,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -580,8 +579,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -602,8 +601,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -624,8 +623,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -649,8 +648,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -674,8 +673,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -708,8 +707,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -733,8 +732,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -759,8 +758,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -783,8 +782,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -807,8 +806,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -833,8 +832,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -859,8 +858,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -882,8 +881,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -896,7 +895,7 @@ namespace tcp_server
                 string j = content.ReadAsStringAsync().Result;
                 LoginInfo loginInfo = new LoginInfo();
                 loginInfo = JsonConvert.DeserializeObject<LoginInfo>(j);
-                if (Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP, companyCode))
+                if (Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP))
                 {
                     SqlConn sqlConn = new SqlConn();
                     return sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message;
@@ -905,8 +904,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -919,7 +918,7 @@ namespace tcp_server
                 string j = content.ReadAsStringAsync().Result;
                 CardInfo cardInfo = new CardInfo();
                 cardInfo = JsonConvert.DeserializeObject<CardInfo>(j);
-                if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     SqlConn sqlConn = new SqlConn();
                     CardPrice cardPrice = new CardPrice();
@@ -935,8 +934,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -952,7 +951,7 @@ namespace tcp_server
                 List<Pair> pairs = new List<Pair>();
                 CardPrice cardPrice = new CardPrice();
                 MatchCollection matches = Regex.Matches(replenishmentInfo.cardInfo, @"([0-9])+");
-                if (Card.cashierCheck(replenishmentInfo.loginCard, replenishmentInfo.ip, companyCode) && Card.licenseCheck(replenishmentInfo.cardInfo))
+                if (Card.cashierCheck(replenishmentInfo.loginCard, replenishmentInfo.ip) && Card.licenseCheck(replenishmentInfo.cardInfo))
                 {
                     SqlConn sqlConn = new SqlConn();
                     WorkShiftReport workShiftReport = new WorkShiftReport();
@@ -1010,7 +1009,7 @@ namespace tcp_server
                                                     pairs.Add(new Pair("card_price", sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message));
                                                     sqlConn.insert("cards_price", pairs);
                                                     cardPrice = sqlConn.selectCardPrice("cards_price", "card_id='" + matches[1].ToString() + "'");
-                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket, companyCode);
+                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket);
                                                 }
                                                 else
                                                 {
@@ -1043,7 +1042,7 @@ namespace tcp_server
                                                     pairs.Add(new Pair("card_price", sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message));
                                                     sqlConn.update("cards_price", "card_id='" + matches[1].ToString() + "'", pairs);
                                                     cardPrice = sqlConn.selectCardPrice("cards_price", "card_id='" + matches[1].ToString() + "'");
-                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket, companyCode);
+                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket);
                                                 }
                                                 return JsonConvert.SerializeObject(cardPrice);
                                             }
@@ -1059,8 +1058,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1085,8 +1084,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1121,8 +1120,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1157,8 +1156,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1180,8 +1179,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1203,8 +1202,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1220,14 +1219,14 @@ namespace tcp_server
                 int number = 0;
                 if(Int32.TryParse(cardInfo.inputInfo, out number) )
                 {
-                    return JsonConvert.SerializeObject(Card.selectCardByNumber(number, cardInfo, companyCode));
+                    return JsonConvert.SerializeObject(Card.selectCardByNumber(number, cardInfo));
                 }
                 return JsonConvert.SerializeObject(new Card());
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1250,8 +1249,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
