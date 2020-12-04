@@ -33,17 +33,9 @@ namespace tcp_server
                 License license = Server.checkLicenseFile();
                 var matches = Regex.Matches(cardInfoString, @"([0-9])+");
                 string cardId = matches[1].ToString();
-                if (matches[0].ToString() == "790")
-                {
-                    cardId = matches[2].ToString();
-                }
-                else if (matches[0].ToString() == "111")
-                {
-                    cardId = matches[1].ToString();
-                }
                 if (admin.check())
                 {
-                    if (matches[0].ToString() == matches[0].ToString())
+                    if (license.licenseCompanyCode.ToString() == matches[0].ToString())
                     {
                         if (Card.licenseCheck(cardInfoString))
                         {
@@ -86,14 +78,6 @@ namespace tcp_server
                     {
                         var matches = Regex.Matches(cardInfoString, @"([0-9])+");
                         string cardId = matches[1].ToString();
-                        if (matches[0].ToString() == "790")
-                        {
-                            cardId = matches[2].ToString();
-                        }
-                        else if (matches[0].ToString() == "111")
-                        {
-                            cardId = matches[1].ToString();
-                        }
                         License license = Server.checkLicenseFile();
                         
                         if (license.licenseCompanyCode.ToString() == matches[0].ToString())

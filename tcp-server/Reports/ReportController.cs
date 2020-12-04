@@ -42,8 +42,8 @@ namespace tcp_server.Controllers
             }
             catch(Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
             
@@ -71,7 +71,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -98,7 +98,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -126,8 +126,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -153,8 +153,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -181,8 +181,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -208,8 +208,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -235,8 +235,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -262,8 +262,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -290,8 +290,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -323,7 +323,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -353,7 +353,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -382,7 +382,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -409,7 +409,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -438,7 +438,7 @@ namespace tcp_server.Controllers
             catch (Exception exc)
             {
                 Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -476,8 +476,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -505,8 +505,8 @@ namespace tcp_server.Controllers
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }

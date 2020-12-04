@@ -125,13 +125,13 @@ namespace tcp_server
                     }
                     catch (Exception exc)
                     {
-                        Console.WriteLine("\nОшибка подключения к базе данных: " + exc.ToString() + "\nПовторите ввод данных базы.");
+                        Console.WriteLine("\nОшибка подключения к базе данных: " + exc.Message + "\nПовторите ввод данных базы.");
                     }
                 }
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
+                Console.WriteLine(exc.Message);
                 return false;
             }
         }
@@ -254,7 +254,7 @@ namespace tcp_server
                     cardParentName = reader.GetString(8),
                     cardRegDate = reader.GetDateTime(9),
                     cardDayBonus = (reader.IsDBNull(10) == false) ? reader.GetDecimal(10) : 0,
-                    cardDayBonusDateTime = (reader.IsDBNull(11) == false) ? reader.GetDateTime(11) : new DateTime(2020, 10, 20)
+                    cardDayBonusDateTime = (reader.IsDBNull(10) == false) ? reader.GetDateTime(11) : new DateTime(20, 10, 2020)
                 };
             }
             reader.Close();
@@ -283,7 +283,7 @@ namespace tcp_server
                     cardParentName = reader.GetString(8),
                     cardRegDate = reader.GetDateTime(9),
                     cardDayBonus = (reader.IsDBNull(10) == false) ? reader.GetDecimal(10) : 0,
-                    cardDayBonusDateTime = (reader.IsDBNull(11) == false) ? reader.GetDateTime(11) : new DateTime(2020, 10, 20)
+                    cardDayBonusDateTime = (reader.IsDBNull(10) == false) ? reader.GetDateTime(11) : new DateTime(20, 10, 2020)
                 });
 
             }
@@ -843,7 +843,7 @@ namespace tcp_server
                     cardParentName = reader.GetString(8),
                     cardRegDate = reader.GetDateTime(9),
                     cardDayBonus = (reader.IsDBNull(10) == false) ? reader.GetDecimal(10) : 0,
-                    cardDayBonusDateTime = (reader.IsDBNull(10) == false) ? reader.GetDateTime(11) : new DateTime(2020,10,20)
+                    cardDayBonusDateTime = (reader.IsDBNull(10) == false) ? reader.GetDateTime(11) : new DateTime(20,10,2020)
                 };
 
             }
@@ -871,7 +871,7 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
+                Console.WriteLine(exc.Message);
                 logger.Info(exc);
                 return false;
             }

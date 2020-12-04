@@ -193,33 +193,3 @@ F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSync
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.exe
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Debug\WebSyncContract.pdb
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.exe.config
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.exe
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.pdb
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
-G:\f\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
-G:\f\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
-G:\f\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.exe
-G:\f\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.pdb
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.exe.config
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.exe
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\WebSyncContract.pdb
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\Newtonsoft.Json.dll
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\Newtonsoft.Json.xml
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.resources.dll
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Data.resources.dll
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.Files.resources.dll
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
-E:\gk\tcp-server master\WebSyncContract\bin\Debug\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
-E:\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csprojAssemblyReference.cache
-E:\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csproj.CoreCompileInputs.cache
-E:\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.csproj.CopyComplete
-E:\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.exe
-E:\gk\tcp-server master\WebSyncContract\obj\Debug\WebSyncContract.pdb

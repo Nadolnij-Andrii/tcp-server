@@ -42,8 +42,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
             }
         }
         //public void Synchronization(SqlConnection clientConn, SqlConnection serverConn)
@@ -106,8 +106,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return false;
             }
         }

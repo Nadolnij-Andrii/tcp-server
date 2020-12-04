@@ -30,9 +30,9 @@ namespace tcp_server
             this.cashierRegisterIP = cashierRegisterIP;
             this.timeLastPing = timeLastPing;
         }
-        public static bool formClosing(LoginInfo loginInfo)
+        public static bool formClosing(LoginInfo loginInfo, int companyCode)
         {
-            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP))
+            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP, companyCode))
             {
                 SqlConn conn = new SqlConn();
                 CashierRegister cashierRegister = conn.selectCashierRegister("cashierregister", "ip='" + loginInfo.IP + "'");
@@ -40,14 +40,6 @@ namespace tcp_server
                 {
                     MatchCollection matches = Regex.Matches(loginInfo.cardInfo, @"([0-9])+");
                     var cardLoginId = matches[1].ToString();
-                    if (matches[0].ToString() == "790")
-                    {
-                        cardLoginId = matches[2].ToString();
-                    }
-                    else if (matches[0].ToString() == "111")
-                    {
-                        cardLoginId = matches[1].ToString();
-                    }
                     if (matches.Count > 3)
                     {
                         Card currentCard = conn.select("cards", "card_id='" + cardLoginId + "'");

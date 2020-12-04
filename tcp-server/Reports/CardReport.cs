@@ -225,7 +225,7 @@ namespace tcp_server
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
             }
         }
         public class ReportedCard

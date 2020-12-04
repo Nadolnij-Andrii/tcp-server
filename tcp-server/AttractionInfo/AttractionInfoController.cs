@@ -38,8 +38,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -61,8 +61,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -90,8 +90,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -118,8 +118,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -145,8 +145,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -172,8 +172,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -199,8 +199,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -231,8 +231,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -263,8 +263,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -295,8 +295,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -327,8 +327,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -357,8 +357,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -387,8 +387,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -417,8 +417,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -445,8 +445,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -487,8 +487,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -521,8 +521,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -558,8 +558,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -586,8 +586,8 @@ namespace tcp_server.AttractionInfo
 
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -620,8 +620,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -654,8 +654,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
 
@@ -688,8 +688,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -711,8 +711,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -736,8 +736,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }
@@ -760,8 +760,8 @@ namespace tcp_server.AttractionInfo
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.ToString());
-                logger.Error(exc.ToString());
+                Console.WriteLine(exc.Message);
+                logger.Error(exc.Message);
                 return null;
             }
         }

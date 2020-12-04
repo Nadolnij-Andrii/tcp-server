@@ -59,21 +59,13 @@ namespace tcp_server
         {
             try
             {
-                if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
+                if (Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
                 {
-                    if (Card.licenseCheckResponse(cardInfo))
+                    if (Card.licenseCheckResponse(cardInfo, companyCode))
                     {
                         var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
                         string cardId = matches[1].ToString();
-                        if (matches[0].ToString() == "790")
-                        {
-                            cardId = matches[2].ToString();
-                        }
-                        else if (matches[0].ToString() == "111")
-                        {
-                            cardId = matches[1].ToString();
-                        }
                         SqlConn conn = new SqlConn();
                         Card card = conn.select("cards", "card_id='" + cardId + "'");
                         return conn.selectClient("client_info", "card_id='" + cardId + "'");

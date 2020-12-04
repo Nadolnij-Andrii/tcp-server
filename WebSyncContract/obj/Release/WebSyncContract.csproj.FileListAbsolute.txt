@@ -127,18 +127,3 @@ F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Release\WebSy
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Release\WebSyncContract.csproj.CopyComplete
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Release\WebSyncContract.exe
 F:\Работа\work\01.02.2019\1\1\tcp-server\WebSyncContract\obj\Release\WebSyncContract.pdb
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\WebSyncContract.exe.config
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\WebSyncContract.exe
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\WebSyncContract.pdb
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\Newtonsoft.Json.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\Newtonsoft.Json.xml
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\ru\Microsoft.Synchronization.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\ru\Microsoft.Synchronization.Data.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\ru\Microsoft.Synchronization.Files.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\ru\Microsoft.Synchronization.MetadataStorage.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\bin\Release\ru\Microsoft.Synchronization.SimpleProviders.resources.dll
-G:\f\gk\tcp-server master\WebSyncContract\obj\Release\WebSyncContract.csprojAssemblyReference.cache
-G:\f\gk\tcp-server master\WebSyncContract\obj\Release\WebSyncContract.csproj.CoreCompileInputs.cache
-G:\f\gk\tcp-server master\WebSyncContract\obj\Release\WebSyncContract.csproj.CopyComplete
-G:\f\gk\tcp-server master\WebSyncContract\obj\Release\WebSyncContract.exe
-G:\f\gk\tcp-server master\WebSyncContract\obj\Release\WebSyncContract.pdb
