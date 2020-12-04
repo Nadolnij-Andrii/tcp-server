@@ -51,8 +51,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -65,13 +65,13 @@ namespace tcp_server
                 string j = content.ReadAsStringAsync().Result;
                 CardInfo cardInfo = new CardInfo();
                 cardInfo = JsonConvert.DeserializeObject<CardInfo>(j);
-                string card = Card.selectCard(cardInfo, companyCode);
+                string card = Card.selectCard(cardInfo);
                 return card;
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -88,8 +88,7 @@ namespace tcp_server
                         swapCardInfo.newCardInfo,
                         swapCardInfo.oldCardInfo,
                         swapCardInfo.loginCard,
-                        swapCardInfo.ip,
-                        companyCode);
+                        swapCardInfo.ip);
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
                 card.TotalGames = Card.selectAllGames(card.cardId.ToString());
@@ -103,8 +102,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -118,13 +117,13 @@ namespace tcp_server
                 LoginInfo logininfo = new LoginInfo();
                 logininfo = JsonConvert.DeserializeObject<LoginInfo>(j);
                 return JsonConvert.SerializeObject(
-                    Card.getStartInfo(logininfo.cardInfo, logininfo.IP, companyCode)
+                    Card.getStartInfo(logininfo.cardInfo, logininfo.IP)
                     );
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -149,8 +148,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -183,8 +182,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -201,8 +200,7 @@ namespace tcp_server
                         transferCardInfo.fromCardInfoString,
                         transferCardInfo.toCardInfoString,
                         transferCardInfo.loginCard,
-                        transferCardInfo.ip,
-                        companyCode);
+                        transferCardInfo.ip);
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
                 card.TotalGames = Card.selectAllGames(card.cardId.ToString());
@@ -216,8 +214,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -231,7 +229,7 @@ namespace tcp_server
                 LoginInfo loginInfo = new LoginInfo();
                 loginInfo = JsonConvert.DeserializeObject<LoginInfo>(j);
 
-                if (CashierRegister.formClosing(loginInfo, companyCode))
+                if (CashierRegister.formClosing(loginInfo))
                 {
                     return new HttpResponseMessage(HttpStatusCode.Accepted);
                 }
@@ -242,8 +240,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -265,8 +263,7 @@ namespace tcp_server
                         Decimal.Parse(replenishmentInfo.cashlessPayment.ToString()),
                         Decimal.Parse(replenishmentInfo.creditCard.ToString()),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                     );
                 if (card != null && card.id > 0 && (card.cardCount != count || (replenishmentInfo.cash + replenishmentInfo.cashlessPayment + replenishmentInfo.creditCard) == 0))
                 {
@@ -275,9 +272,7 @@ namespace tcp_server
                            Decimal.Parse(replenishmentInfo.creditCard.ToString()),
                            0,
                            replenishmentInfo.loginCard,
-                           replenishmentInfo.ip,
-                           replenishmentInfo.cardInfo,
-                           companyCode);
+                           replenishmentInfo.ip);
                 }
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -294,8 +289,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -311,8 +306,7 @@ namespace tcp_server
                 Card card = Card.removeCard(
                         cardInfo.inputInfo,
                         cardInfo.loginCard,
-                        cardInfo.ip,
-                        companyCode
+                        cardInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -329,8 +323,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -347,8 +341,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.Parse(replenishmentInfo.cash.ToString()),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -365,8 +358,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -383,8 +376,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.Parse(replenishmentInfo.cash.ToString()),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -401,8 +393,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -418,8 +410,7 @@ namespace tcp_server
                 Card card = Card.activateCard(
                         cardinfo.inputInfo,
                         cardinfo.loginCard,
-                        cardinfo.ip,
-                        companyCode
+                        cardinfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -436,8 +427,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -454,8 +445,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.ToInt32(replenishmentInfo.cash),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -472,8 +462,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -490,8 +480,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.ToInt32(replenishmentInfo.cash),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
 
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
@@ -509,8 +498,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -526,8 +515,7 @@ namespace tcp_server
                 Card card = Card.block(
                         cardInfo.inputInfo,
                         cardInfo.loginCard,
-                        cardInfo.ip,
-                        companyCode
+                        cardInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -544,8 +532,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -562,8 +550,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.ToInt32(replenishmentInfo.cash),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -580,8 +567,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -602,8 +589,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -624,8 +611,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -649,8 +636,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -674,8 +661,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -713,8 +700,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -738,8 +725,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -764,8 +751,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -788,8 +775,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -812,8 +799,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -838,8 +825,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -864,8 +851,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -887,8 +874,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -901,7 +888,7 @@ namespace tcp_server
                 string j = content.ReadAsStringAsync().Result;
                 LoginInfo loginInfo = new LoginInfo();
                 loginInfo = JsonConvert.DeserializeObject<LoginInfo>(j);
-                if (Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP, companyCode))
+                if (Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP))
                 {
                     SqlConn sqlConn = new SqlConn();
                     return sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message;
@@ -910,8 +897,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -924,7 +911,7 @@ namespace tcp_server
                 string j = content.ReadAsStringAsync().Result;
                 CardInfo cardInfo = new CardInfo();
                 cardInfo = JsonConvert.DeserializeObject<CardInfo>(j);
-                if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+                if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
                 {
                     SqlConn sqlConn = new SqlConn();
                     CardPrice cardPrice = new CardPrice();
@@ -949,8 +936,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -966,7 +953,7 @@ namespace tcp_server
                 List<Pair> pairs = new List<Pair>();
                 CardPrice cardPrice = new CardPrice();
                 MatchCollection matches = Regex.Matches(replenishmentInfo.cardInfo, @"([0-9])+");
-                if (Card.cashierCheck(replenishmentInfo.loginCard, replenishmentInfo.ip, companyCode) && Card.licenseCheck(replenishmentInfo.cardInfo))
+                if (Card.cashierCheck(replenishmentInfo.loginCard, replenishmentInfo.ip) && Card.licenseCheck(replenishmentInfo.cardInfo))
                 {
                     SqlConn sqlConn = new SqlConn();
                     WorkShiftReport workShiftReport = new WorkShiftReport();
@@ -987,7 +974,16 @@ namespace tcp_server
                             MatchCollection matches1 = Regex.Matches(replenishmentInfo.loginCard, @"([0-9])+");
                             if (matches1.Count > 3)
                             {
-                                Cashier cashier = sqlConn.selectCashier("cashiers", "card_id='" + cardId + "'");
+                                string cardIdCashire = "";
+                                if (matches1[0].ToString() == "790")
+                                {
+                                    cardIdCashire = matches1[2].ToString();
+                                }
+                                else if (matches1[0].ToString() == "111")
+                                {
+                                    cardIdCashire = matches1[1].ToString();
+                                }
+                                Cashier cashier = sqlConn.selectCashier("cashiers", "card_id='" + cardIdCashire + "'");
                                 if (cashier != null)
                                 {
                                     CashierRegister cashierRegister = sqlConn.selectCashierRegister("cashierregister", "ip='" + replenishmentInfo.ip + "'");
@@ -1032,7 +1028,7 @@ namespace tcp_server
                                                     pairs.Add(new Pair("card_price", sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message));
                                                     sqlConn.insert("cards_price", pairs);
                                                     cardPrice = sqlConn.selectCardPrice("cards_price", "card_id='" + cardId + "'");
-                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket, companyCode);
+                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket);
                                                 }
                                                 else
                                                 {
@@ -1065,7 +1061,7 @@ namespace tcp_server
                                                     pairs.Add(new Pair("card_price", sqlConn.selectCardStatus("card_state", "state_id='" + 17 + "'").status_message));
                                                     sqlConn.update("cards_price", "card_id='" + cardId + "'", pairs);
                                                     cardPrice = sqlConn.selectCardPrice("cards_price", "card_id='" + cardId + "'");
-                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket, companyCode);
+                                                    Card.addTransaction(card.cardId, 0, 22, cardPrice.cardPrice, 0, 0, replenishmentInfo.loginCard, replenishmentInfo.ip, card.cardCount, card.cardBonus, card.cardTicket);
                                                 }
                                                 return JsonConvert.SerializeObject(cardPrice);
                                             }
@@ -1081,8 +1077,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1100,15 +1096,14 @@ namespace tcp_server
                     Card.ReturnCashForCard(
                         cardInfo.inputInfo,
                         cardInfo.loginCard,
-                        cardInfo.ip,
-                        companyCode
+                        cardInfo.ip
                         )
                     );
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1125,8 +1120,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.ToInt32(replenishmentInfo.cash),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -1143,8 +1137,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1161,8 +1155,7 @@ namespace tcp_server
                         replenishmentInfo.cardInfo,
                         Decimal.ToInt32(replenishmentInfo.cash),
                         replenishmentInfo.loginCard,
-                        replenishmentInfo.ip,
-                        companyCode
+                        replenishmentInfo.ip
                         );
                 card.TotalAccrued = Card.selectAllIncomeOnCard(card.cardId.ToString());
                 card.TotalSpend = Card.selectAllSpendOnCard(card.cardId.ToString());
@@ -1179,8 +1172,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1202,8 +1195,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1225,8 +1218,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1242,14 +1235,14 @@ namespace tcp_server
                 int number = 0;
                 if(Int32.TryParse(cardInfo.inputInfo, out number) )
                 {
-                    return JsonConvert.SerializeObject(Card.selectCardByNumber(number, cardInfo, companyCode));
+                    return JsonConvert.SerializeObject(Card.selectCardByNumber(number, cardInfo));
                 }
                 return JsonConvert.SerializeObject(new Card());
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }
@@ -1272,8 +1265,8 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Error(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Error(exc.ToString());
                 return null;
             }
         }

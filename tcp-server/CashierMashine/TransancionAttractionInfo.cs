@@ -28,9 +28,9 @@ namespace tcp_server
         }
         public void GetTransancionAttractionInfo(CardInfo cardInfo,int companyCode)
         {
-            if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip, companyCode))
+            if(Card.cashierCheck(cardInfo.loginCard, cardInfo.ip))
             {
-                if (Card.licenseCheckResponse(cardInfo, companyCode))
+                if (Card.licenseCheckResponse(cardInfo))
                 {
                     var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
                     if (matches.Count > 3)

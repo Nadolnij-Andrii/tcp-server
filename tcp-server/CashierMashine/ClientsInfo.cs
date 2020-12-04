@@ -47,10 +47,10 @@ namespace tcp_server
         {
             try
             {
-                if (Card.cashierCheck(loginInfo, ip, companyCode))
+                if (Card.cashierCheck(loginInfo, ip))
                 {
                     CardInfo cardInfo = new CardInfo(cardInfoString, loginInfo, ip);
-                    if (Card.licenseCheckResponse(cardInfo, companyCode))
+                    if (Card.licenseCheckResponse(cardInfo))
                     {
                         var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
@@ -120,10 +120,10 @@ namespace tcp_server
         {
             try
             {
-                if (Card.cashierCheck(loginInfo, ip, companyCode))
+                if (Card.cashierCheck(loginInfo, ip))
                 {
                     CardInfo cardInfo = new CardInfo(cardInfoString, loginInfo, ip);
-                    if (Card.licenseCheckResponse(cardInfo, companyCode))
+                    if (Card.licenseCheckResponse(cardInfo))
                     {
                         var matches = Regex.Matches(cardInfo.inputInfo, @"([0-9])+");
 
@@ -161,8 +161,8 @@ namespace tcp_server
             }
             catch(Exception exc)
             {
-                Console.WriteLine(exc.Message);
-                logger.Info(exc.Message);
+                Console.WriteLine(exc.ToString());
+                logger.Info(exc.ToString());
                 return false;
             }
         }

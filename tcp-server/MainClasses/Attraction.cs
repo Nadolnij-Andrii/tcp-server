@@ -67,7 +67,7 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
+                Console.WriteLine(exc.ToString());
                 logger.Info(exc);
             }
         }
@@ -90,7 +90,7 @@ namespace tcp_server
             }
             catch (Exception exc)
             {
-                Console.WriteLine(exc.Message);
+                Console.WriteLine(exc.ToString());
                 logger.Info(exc);
             }
         }

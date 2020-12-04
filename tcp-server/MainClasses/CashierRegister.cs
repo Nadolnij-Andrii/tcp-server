@@ -30,9 +30,9 @@ namespace tcp_server
             this.cashierRegisterIP = cashierRegisterIP;
             this.timeLastPing = timeLastPing;
         }
-        public static bool formClosing(LoginInfo loginInfo, int companyCode)
+        public static bool formClosing(LoginInfo loginInfo)
         {
-            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP, companyCode))
+            if(Card.cashierCheck(loginInfo.cardInfo, loginInfo.IP))
             {
                 SqlConn conn = new SqlConn();
                 CashierRegister cashierRegister = conn.selectCashierRegister("cashierregister", "ip='" + loginInfo.IP + "'");
