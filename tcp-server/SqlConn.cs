@@ -843,7 +843,7 @@ namespace tcp_server
                     cardParentName = reader.GetString(8),
                     cardRegDate = reader.GetDateTime(9),
                     cardDayBonus = (reader.IsDBNull(10) == false) ? reader.GetDecimal(10) : 0,
-                    cardDayBonusDateTime = (reader.IsDBNull(11) == false) ? reader.GetDateTime(11) : new DateTime(20,10,2020)
+                    cardDayBonusDateTime = (reader.IsDBNull(11) == false) ? reader.GetDateTime(11) : new DateTime(2020, 10, 20)
                 };
 
             }

@@ -1090,7 +1090,7 @@ namespace tcp_server
         {
             SqlConn sqlConn = new SqlConn();
             List<Card> cards = new List<Card>();
-            cards = sqlConn.selectCards("cards", "card_day_bonus_date > '"+ new DateTime(20,10,2020).ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'" + " and card_day_bonus_date < '" + DateTime.Now.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'");
+            cards = sqlConn.selectCards("cards", "card_day_bonus_date > '"+ new DateTime(2020, 10, 20).ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'" + " and card_day_bonus_date < '" + DateTime.Now.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture) + " 23:59:59'");
             foreach (var card in cards)
             {
                 List<Pair> pairs = new List<Pair>();
